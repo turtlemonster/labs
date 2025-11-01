@@ -4,11 +4,115 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to my Page</title>
-  <script src="/.vibehammer/injector.js" defer></script>
+    <title>GreenScape - Professional Lawn Care Services</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="/.vibehammer/injector.js" defer></script>
 </head>
 <body data-vibehammer-file="index.html" data-vibehammer-line="9">
-    <h1 data-vibehammer-file="index.html" data-vibehammer-line="10">Welcome to my page.</h1>
-    <p>This is a simple HTML page.</p>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">🌿 GreenScape</div>
+            <ul class="nav-links">
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 data-vibehammer-file="index.html" data-vibehammer-line="10">Transform Your Lawn Into a Beautiful Oasis</h1>
+            <p>Professional lawn care services for residential and commercial properties</p>
+            <button class="cta-button">Get Your Free Quote</button>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">✂️</div>
+                    <h3>Lawn Mowing</h3>
+                    <p>Regular maintenance and precision cuts for a healthy, manicured appearance.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🌱</div>
+                    <h3>Landscaping</h3>
+                    <p>Professional landscape design and installation for your property.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🍂</div>
+                    <h3>Lawn Cleanup</h3>
+                    <p>Seasonal leaf removal and property clean-up services.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">💧</div>
+                    <h3>Lawn Fertilization</h3>
+                    <p>Customized fertilization programs for optimal lawn health and growth.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🐛</div>
+                    <h3>Pest Control</h3>
+                    <p>Safe and effective pest management to protect your lawn.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🌾</div>
+                    <h3>Weed Control</h3>
+                    <p>Targeted weed removal to keep your lawn pristine and healthy.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>Why Choose GreenScape?</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <ul>
+                        <li>✓ 15+ years of industry experience</li>
+                        <li>✓ Fully licensed and insured</li>
+                        <li>✓ Eco-friendly practices</li>
+                        <li>✓ 24/7 customer support</li>
+                        <li>✓ Satisfaction guaranteed</li>
+                        <li>✓ Free estimates and consultations</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Get in Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <p><strong>📞 Phone:</strong> (555) 123-4567</p>
+                    <p><strong>📧 Email:</strong> info@greenscape.com</p>
+                    <p><strong>🕒 Hours:</strong> Mon-Fri 7am-6pm, Sat 8am-4pm</p>
+                </div>
+                <form class="contact-form">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Message" rows="4" required></textarea>
+                    <button type="submit" class="cta-button">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 GreenScape Lawn Care. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>
