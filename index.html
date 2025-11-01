@@ -4,10 +4,245 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to my Page</title>
-  <script src="/.vibehammer/injector.js" defer></script>
+    <title>Computer Programmer Resume</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            background-color: white;
+            padding: 40px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        header {
+            text-align: center;
+            border-bottom: 3px solid #007bff;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+        h1 {
+            font-size: 32px;
+            color: #007bff;
+            margin-bottom: 5px;
+        }
+        .contact-info {
+            font-size: 14px;
+            color: #666;
+        }
+        .contact-info span {
+            margin: 0 15px;
+        }
+        section {
+            margin-bottom: 30px;
+        }
+        h2 {
+            font-size: 20px;
+            color: #007bff;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+        }
+        .job, .education, .skill-category {
+            margin-bottom: 20px;
+        }
+        .job-title {
+            font-size: 16px;
+            font-weight: bold;
+            color: #333;
+        }
+        .company {
+            color: #007bff;
+            font-weight: bold;
+            display: inline;
+        }
+        .dates {
+            float: right;
+            color: #666;
+            font-style: italic;
+        }
+        .job-description {
+            margin-top: 8px;
+            color: #555;
+            padding-left: 20px;
+            list-style-type: disc;
+        }
+        .job-description li {
+            margin-bottom: 5px;
+        }
+        .degree {
+            font-size: 16px;
+            font-weight: bold;
+            color: #333;
+        }
+        .school {
+            color: #007bff;
+            font-weight: bold;
+        }
+        .skill-category h3 {
+            font-size: 14px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 8px;
+        }
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+        .skill-tag {
+            background-color: #e8f4f8;
+            color: #007bff;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 13px;
+            border: 1px solid #007bff;
+        }
+    </style>
 </head>
-<body data-vibehammer-file="index.html" data-vibehammer-line="9">
-    <p data-vibehammer-file="index.html" data-vibehammer-line="10">Welcome to my page. This is a simple HTML page.</p>
+<body>
+    <div class="container">
+        <header>
+            <h1>ALEX JOHNSON</h1>
+            <div class="contact-info">
+                <span>📧 alex.johnson@email.com</span>
+                <span>📱 (555) 123-4567</span>
+                <span>📍 San Francisco, CA</span>
+                <span>💼 linkedin.com/in/alexjohnson</span>
+            </div>
+        </header>
+
+        <section>
+            <h2>PROFESSIONAL SUMMARY</h2>
+            <p>Experienced Computer Programmer with 6+ years of expertise in full-stack web development, software design, and system architecture. Proficient in multiple programming languages and frameworks with a proven track record of delivering high-quality solutions for enterprise clients. Strong problem-solving skills and passion for clean code and best practices.</p>
+        </section>
+
+        <section>
+            <h2>PROFESSIONAL EXPERIENCE</h2>
+            
+            <div class="job">
+                <div class="job-title">
+                    Senior Software Developer
+                    <span class="dates">Jan 2021 - Present</span>
+                </div>
+                <div class="company">Tech Solutions Inc., San Francisco, CA</div>
+                <ul class="job-description">
+                    <li>Led development of microservices architecture serving 2M+ users, improving system performance by 40%</li>
+                    <li>Designed and implemented RESTful APIs using Node.js and Express, handling 100K+ daily requests</li>
+                    <li>Mentored junior developers and conducted code reviews to maintain code quality standards</li>
+                    <li>Implemented CI/CD pipelines using Docker and Kubernetes, reducing deployment time by 60%</li>
+                </ul>
+            </div>
+
+            <div class="job">
+                <div class="job-title">
+                    Full Stack Developer
+                    <span class="dates">Jun 2018 - Dec 2020</span>
+                </div>
+                <div class="company">Digital Innovations LLC, San Jose, CA</div>
+                <ul class="job-description">
+                    <li>Developed responsive web applications using React and Vue.js, improving user engagement by 35%</li>
+                    <li>Built backend services with Python (Django) and maintained PostgreSQL databases</li>
+                    <li>Collaborated with cross-functional teams to deliver projects on schedule and within budget</li>
+                    <li>Optimized database queries and implemented caching strategies, reducing load times by 50%</li>
+                </ul>
+            </div>
+
+            <div class="job">
+                <div class="job-title">
+                    Junior Programmer
+                    <span class="dates">Jul 2017 - May 2018</span>
+                </div>
+                <div class="company">StartUp Ventures, Palo Alto, CA</div>
+                <ul class="job-description">
+                    <li>Developed features for mobile and web applications using JavaScript and Java</li>
+                    <li>Fixed bugs and implemented unit tests, achieving 85% code coverage</li>
+                    <li>Participated in agile development cycles and daily stand-up meetings</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>EDUCATION</h2>
+            
+            <div class="education">
+                <div class="degree">Bachelor of Science in Computer Science</div>
+                <div class="school">University of California, Berkeley</div>
+                <div class="dates">Graduated: May 2017</div>
+            </div>
+        </section>
+
+        <section>
+            <h2>TECHNICAL SKILLS</h2>
+            
+            <div class="skill-category">
+                <h3>Programming Languages</h3>
+                <div class="skills-list">
+                    <div class="skill-tag">JavaScript</div>
+                    <div class="skill-tag">Python</div>
+                    <div class="skill-tag">Java</div>
+                    <div class="skill-tag">C++</div>
+                    <div class="skill-tag">SQL</div>
+                    <div class="skill-tag">HTML/CSS</div>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h3>Frameworks & Libraries</h3>
+                <div class="skills-list">
+                    <div class="skill-tag">React</div>
+                    <div class="skill-tag">Vue.js</div>
+                    <div class="skill-tag">Node.js</div>
+                    <div class="skill-tag">Express</div>
+                    <div class="skill-tag">Django</div>
+                    <div class="skill-tag">Spring Boot</div>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h3>Databases & Tools</h3>
+                <div class="skills-list">
+                    <div class="skill-tag">PostgreSQL</div>
+                    <div class="skill-tag">MongoDB</div>
+                    <div class="skill-tag">MySQL</div>
+                    <div class="skill-tag">Git</div>
+                    <div class="skill-tag">Docker</div>
+                    <div class="skill-tag">AWS</div>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h3>Other Skills</h3>
+                <div class="skills-list">
+                    <div class="skill-tag">REST APIs</div>
+                    <div class="skill-tag">Microservices</div>
+                    <div class="skill-tag">Agile/Scrum</div>
+                    <div class="skill-tag">System Design</div>
+                    <div class="skill-tag">CI/CD</div>
+                    <div class="skill-tag">Linux</div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>CERTIFICATIONS & ACHIEVEMENTS</h2>
+            <ul class="job-description">
+                <li>AWS Certified Solutions Architect - Associate (2021)</li>
+                <li>Contributor to open-source project "WebFramework" with 5K+ GitHub stars</li>
+                <li>Employee of the Month - Tech Solutions Inc. (2022)</li>
+                <li>Completed Google Cloud Platform Professional certification (2020)</li>
+            </ul>
+        </section>
+    </div>
 </body>
 </html>
