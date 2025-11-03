@@ -7,8 +7,7 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
-    color: #2c3e50;
-    background-color: #f8f9fa;
+    color: #333;
 }
 
 .container {
@@ -22,7 +21,7 @@ body {
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     color: white;
     padding: 20px 0;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 .navbar h1 {
@@ -32,67 +31,72 @@ body {
 
 .navbar .tagline {
     font-size: 14px;
-    opacity: 0.9;
+    opacity: 0.95;
 }
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: white;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
     padding: 60px 20px;
     text-align: center;
 }
 
-.hero-content h2 {
-    font-size: 36px;
-    margin-bottom: 15px;
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.hero-content p {
+.hero h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.hero > .hero-content > p {
     font-size: 18px;
     margin-bottom: 30px;
-    opacity: 0.95;
+    color: #555;
 }
 
 .hero-image {
-    max-width: 500px;
     width: 100%;
+    max-width: 500px;
     height: auto;
-    border-radius: 10px;
+    border-radius: 15px;
     margin-bottom: 30px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
 }
 
 .cta-button {
-    background-color: #48bb78;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     color: white;
-    border: none;
-    padding: 14px 40px;
+    padding: 15px 40px;
     font-size: 16px;
-    border-radius: 25px;
+    border: none;
+    border-radius: 50px;
     cursor: pointer;
-    transition: all 0.3s ease;
-    font-weight: 600;
-    box-shadow: 0 4px 15px rgba(72, 187, 120, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
 }
 
 .cta-button:hover {
-    background-color: #38a169;
     transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(72, 187, 120, 0.4);
+    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
 }
 
 /* Services Section */
 .services {
     padding: 60px 20px;
-    background-color: #f8f9fa;
+    background: white;
 }
 
 .services h2 {
     font-size: 32px;
-    text-align: center;
     margin-bottom: 40px;
-    color: #2c3e50;
+    text-align: center;
 }
 
 .service-grid {
@@ -102,88 +106,82 @@ body {
 }
 
 .service-card {
-    background: white;
+    background: #f8f9fa;
     padding: 30px;
     border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
-    border-left: 5px solid #667eea;
-    transition: all 0.3s ease;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .service-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 25px rgba(102, 126, 234, 0.15);
+    box-shadow: 0 5px 20px rgba(0,0,0,0.15);
 }
 
 .service-card h3 {
-    color: #667eea;
+    font-size: 20px;
     margin-bottom: 15px;
-    font-size: 18px;
+    color: #667eea;
 }
 
 .service-card p {
-    color: #555;
-    font-size: 14px;
+    color: #666;
+    line-height: 1.8;
 }
 
 /* Testimonials Section */
 .testimonials {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
     padding: 60px 20px;
-    background-color: white;
 }
 
 .testimonials h2 {
     font-size: 32px;
-    text-align: center;
     margin-bottom: 40px;
-    color: #2c3e50;
+    text-align: center;
 }
 
 .testimonial-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 30px;
 }
 
 .testimonial {
-    background: linear-gradient(135deg, #f5f7fa 0%, #eef1f8 100%);
-    padding: 30px;
+    background: rgba(255,255,255,0.1);
+    padding: 25px;
     border-radius: 10px;
-    border-left: 4px solid #48bb78;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    border-left: 4px solid white;
 }
 
 .testimonial p {
-    color: #2c3e50;
     margin-bottom: 15px;
-    font-size: 14px;
     line-height: 1.8;
 }
 
 .testimonial .author {
-    color: #667eea;
-    font-weight: 600;
-    font-size: 13px;
+    font-weight: bold;
+    opacity: 0.9;
 }
 
 /* Red Flags Section */
 .red-flags {
     padding: 60px 20px;
-    background: linear-gradient(135deg, #f5f7fa 0%, #eef1f8 100%);
+    background: #f8f9fa;
 }
 
 .red-flags h2 {
     font-size: 32px;
+    margin-bottom: 20px;
     text-align: center;
-    margin-bottom: 10px;
-    color: #2c3e50;
 }
 
 .red-flags .subtitle {
     text-align: center;
-    font-size: 16px;
-    color: #666;
+    font-size: 18px;
     margin-bottom: 30px;
+    color: #666;
 }
 
 .red-flags-list {
@@ -193,13 +191,13 @@ body {
     background: white;
     padding: 30px;
     border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
 .red-flags-list li {
     padding: 12px 0;
-    color: #2c3e50;
-    font-size: 15px;
+    font-size: 16px;
+    color: #555;
     border-bottom: 1px solid #eee;
 }
 
@@ -207,24 +205,23 @@ body {
     border-bottom: none;
 }
 
-.qualified {
+.red-flags .qualified {
     text-align: center;
     font-size: 16px;
+    font-weight: bold;
     color: #667eea;
-    font-weight: 600;
 }
 
 /* Pricing Section */
 .pricing {
     padding: 60px 20px;
-    background-color: white;
+    background: white;
 }
 
 .pricing h2 {
     font-size: 32px;
-    text-align: center;
     margin-bottom: 40px;
-    color: #2c3e50;
+    text-align: center;
 }
 
 .pricing-grid {
@@ -236,50 +233,49 @@ body {
 }
 
 .pricing-card {
-    background: white;
-    border: 2px solid #e2e8f0;
-    border-radius: 10px;
+    background: #f8f9fa;
     padding: 30px;
-    text-align: center;
-    transition: all 0.3s ease;
-}
-
-.pricing-card:hover {
-    transform: translateY(-5px);
-    border-color: #667eea;
-    box-shadow: 0 10px 30px rgba(102, 126, 234, 0.15);
+    border-radius: 10px;
+    border: 2px solid transparent;
+    transition: all 0.3s;
 }
 
 .pricing-card.featured {
-    border-color: #667eea;
-    background: linear-gradient(135deg, #f5f7fa 0%, #eef1f8 100%);
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
     transform: scale(1.05);
+    box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
 }
 
 .pricing-card h3 {
-    color: #2c3e50;
+    font-size: 22px;
     margin-bottom: 15px;
-    font-size: 20px;
 }
 
 .pricing-card .price {
     font-size: 28px;
-    color: #667eea;
     font-weight: bold;
     margin-bottom: 20px;
+    color: #667eea;
+}
+
+.pricing-card.featured .price {
+    color: white;
 }
 
 .pricing-card ul {
     list-style: none;
-    text-align: left;
-    margin-bottom: 25px;
 }
 
 .pricing-card li {
     padding: 10px 0;
-    color: #555;
-    font-size: 14px;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid #ddd;
+    color: #666;
+}
+
+.pricing-card.featured li {
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+    color: white;
 }
 
 .pricing-card li:last-child {
@@ -289,14 +285,13 @@ body {
 /* FAQ Section */
 .faq {
     padding: 60px 20px;
-    background-color: #f8f9fa;
+    background: #f8f9fa;
 }
 
 .faq h2 {
     font-size: 32px;
-    text-align: center;
     margin-bottom: 40px;
-    color: #2c3e50;
+    text-align: center;
 }
 
 .faq-item {
@@ -304,8 +299,7 @@ body {
     padding: 25px;
     margin-bottom: 20px;
     border-radius: 10px;
-    border-left: 4px solid #764ba2;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
     max-width: 800px;
     margin-left: auto;
     margin-right: auto;
@@ -313,57 +307,50 @@ body {
 
 .faq-item h3 {
     color: #667eea;
-    margin-bottom: 10px;
-    font-size: 16px;
+    margin-bottom: 15px;
+    font-size: 18px;
 }
 
 .faq-item p {
-    color: #555;
-    font-size: 14px;
+    color: #666;
     line-height: 1.8;
 }
 
 /* Footer */
 footer {
-    background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+    background: #333;
     color: white;
     text-align: center;
     padding: 30px 20px;
 }
 
 footer p {
-    margin-bottom: 10px;
-    font-size: 14px;
+    margin: 10px 0;
 }
 
-footer p:first-child {
-    font-weight: 600;
-    margin-bottom: 15px;
-}
-
-/* Responsive */
+/* Responsive Design */
 @media (max-width: 768px) {
-    .navbar h1 {
-        font-size: 22px;
+    .hero h2 {
+        font-size: 28px;
     }
 
-    .hero-content h2 {
-        font-size: 28px;
+    .hero > .hero-content > p {
+        font-size: 16px;
     }
 
     .services h2,
     .testimonials h2,
+    .red-flags h2,
     .pricing h2,
-    .faq h2,
-    .red-flags h2 {
-        font-size: 24px;
+    .faq h2 {
+        font-size: 26px;
     }
 
     .pricing-card.featured {
         transform: scale(1);
     }
 
-    .hero-image {
-        max-width: 100%;
+    .navbar h1 {
+        font-size: 22px;
     }
 }
